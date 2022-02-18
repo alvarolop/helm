@@ -25,7 +25,7 @@ git pull
 cp -f /tmp/${JAVA_CHART_NAME}-*.tgz /tmp/${PYTHON_CHART_NAME}-*.tgz helm-packages/
 
 echo -e "\n[5/6] Update Helm Index using --merge parameter"
-helm repo index --merge index.yaml --url https://shellclear.github.io/helm/ .
+helm repo index --merge index.yaml --url https://alvarolop.github.io/helm/ .
 
 echo -e "\n[6/6] Commit and push to $PKGS_BRANCH branch"
 git add index.yaml helm-packages/
